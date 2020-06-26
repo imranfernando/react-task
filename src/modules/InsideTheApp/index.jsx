@@ -22,7 +22,7 @@ const InsideTheApp = () => {
 		if (sidebarOpen == false) {
 			// sidebar open
 			setSidebarOpen(true);
-		} else if (sidebarOpen == true) {
+		} else if (sidebarOpen === true) {
 			// sidebar close
 			setSidebarOpen(false);
 		}

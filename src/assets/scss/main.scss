@@ -1,0 +1,33 @@
+/**
+ * common
+ */
+@import './common/fonts';
+@import './common/mixin';
+@import './common/variables';
+@import './common/typography';
+@import './common/grid';
+
+/**
+ * Components
+ */
+@import '../../components/Common/Breadcrumb/Breadcrumb.scss';
+@import '../../components/Common/Button/Button.scss';
+@import '../../components/Common/Footer/Footer.scss';
+// @import '../../components/Common/FormField/';
+@import '../../components/Common/Header/Header.scss';
+@import '../../components/Common/Header/DateTimeWrapper/DateTimeWrapper.scss';
+@import '../../components/Common/Header/Notifications/Notifications.scss';
+@import '../../components/Common/Header/MenuHamburger/MenuHamburger.scss';
+@import '../../components/Common/Header/NavbarRight/NavbarRight.scss';
+@import '../../components/Common/Header/SearchBox/SearchBox.scss';
+@import '../../components/Common/ProfileImage/ProfileImage.scss';
+@import '../../components/Common/SideNavigation/SideNavigation.scss';
+@import '../../components/IconNotification/IconNotification.scss';
+
+
+/**
+ * Modules
+ */
+// page - Inside The App
+@import '../../modules/InsideTheApp/Banner/Banner.scss';
+@import '../../modules/InsideTheApp/FormChangePassword/FormChangePassword.scss';

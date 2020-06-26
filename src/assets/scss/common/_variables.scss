@@ -1,0 +1,38 @@
+/**
+ * Base Colors
+ */
+$pure_black: #000000;
+$pure_white: #ffffff;
+$fruit_salad: #51a94b;
+$porcelain: #fbfcfc;
+$gravel: #4a484b;
+$salt_box: #5d5b5e;
+$catskill_white: #ecf3f6;
+$cadet_blue: #b4b8c6;
+$selago: #f8f6fe;
+$shuttle_gray: #626572;
+$geyser: #d6dde4;
+$mine_shaft: #2f2f2f;
+$heather: #bdc2d2;
+$hit_gray: #9ca8b1;
+$torch_red: #ff002a;
+
+/**
+ * Open Sans Font
+ */
+$font_open_sans: 'Open Sans';
+
+/**
+ * Open Sans weights
+ */
+$open_sans_300: 300; //light
+$open_sans_400: 400; //regular
+$open_sans_600: 600; //semi-bold
+$open_sans_700: 700; //bold
+$open_sans_800: 800; //extra-bold
+
+/**
+ * images & icons
+ */
+$image_base_path: '../../images/';
+$profile_img: '#{$image-base-path}profile-img.png';

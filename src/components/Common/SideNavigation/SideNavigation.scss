@@ -1,0 +1,158 @@
+.side-navbar-holder {
+	background-color: $fruit_salad;
+	height: 100%;
+	width: 200px;
+	background: #51a94b;
+	border-top-left-radius: 0;
+	border-top-right-radius: 167px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+
+	.side-navbar-top {
+		width: 100%;
+		height: 200px;
+	}
+
+	.side-navbar-inner {
+		.side-navbar-profile {
+			text-align: center;
+			padding: 10px 0;
+			color: $pure_white;
+
+			h5 {
+				margin: 0;
+				font-weight: $open_sans_600;
+				padding-top: 5px;
+			}
+
+			h6 {
+				margin: 0;
+				font-weight: $open_sans_400;
+				padding-top: 5px;
+			}
+
+			.navbar-profile-img {
+				width: 75px;
+				height: 75px;
+				@include border_radius(50%);
+				-webkit-box-shadow: 0px 4px 12px -2px rgba(0, 0, 0, 0.4);
+				-moz-box-shadow: 0px 4px 12px -2px rgba(0, 0, 0, 0.4);
+				box-shadow: 0px 4px 12px -2px rgba(0, 0, 0, 0.4);
+			}
+		}
+	}
+
+	.side-navbar-menu {
+		margin: 50px 0;
+
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+
+			li {
+				margin-left: 20px;
+				height: 40px;
+				font-size: 0.8em;
+				@include transition(0.2s);
+				@include flexbox;
+				align-items: center;
+				margin-bottom: 10px;
+				padding: 5px 0;
+
+				&:hover,
+				&.active {
+					background-color: $pure_white;
+					@include border_radius_to_left(50px);
+					-webkit-box-shadow: -4px 10px 16px -5px rgba(0, 0, 0, 0.75);
+					-moz-box-shadow: -4px 10px 16px -5px rgba(0, 0, 0, 0.75);
+					box-shadow: -4px 10px 16px -5px rgba(0, 0, 0, 0.75);
+					cursor: pointer;
+
+					a {
+						color: $fruit_salad;
+					}
+
+					.side-navbar-menu-icon {
+						color: $fruit_salad;
+					}
+				}
+
+				a {
+					color: $pure_white;
+					@include flexbox;
+					align-items: center;
+					padding-left: 20px;
+					line-height: normal;
+					@include transition(0.2s);
+				}
+			}
+		}
+
+		.side-navbar-menu-icon {
+			vertical-align: middle;
+			color: $pure_white;
+			font-size: 2em;
+			padding-right: 10px;
+			@include transition(0.2s);
+		}
+	}
+
+	.side-navbar-message-icon-holder {
+		position: relative;
+		cursor: pointer;
+		text-align: center;
+		background-color: $pure_white;
+		@include flexbox;
+		align-items: center;
+		justify-content: center;
+		width: 30px;
+		height: 30px;
+		@include border_radius(50%);
+		margin: 0 auto;
+
+		.circle {
+			position: absolute;
+			right: -10px;
+			font-size: 0.6em;
+			width: 20px;
+			height: 20px;
+			display: inline-block;
+			line-height: 15px;
+			text-align: center;
+			vertical-align: middle;
+			@include border_radius(50%);
+			top: -10px;
+
+			span {
+				position: absolute;
+				right: 2px;
+				top: 2px;
+				font-size: 1em;
+				width: 15px;
+				height: 15px;
+				display: inline-block;
+				line-height: 15px;
+				text-align: center;
+				vertical-align: middle;
+				@include border_radius(50%);
+				color: $pure_white;
+				font-family: $open_sans_700;
+			}
+
+			&--green {
+				background-color: rgba(255, 255, 255, 1);
+
+				span {
+					background-color: rgba(81, 169, 75, 1);
+				}
+			}
+		}
+
+		.side-navbar-message-icon {
+			vertical-align: middle;
+			color: $fruit_salad;
+			font-size: 0.7em;
+		}
+	}
+}

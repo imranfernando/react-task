@@ -1,0 +1,71 @@
+/*
+ * Flexbox display
+ */
+@mixin flexbox() {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
+/*
+ * Border radius
+ */
+@mixin border_radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
+
+/*
+ * Border radius - top left
+ */
+@mixin border_radius_to_left($radius) {
+	-webkit-border-top-left-radius: $radius;
+	-webkit-border-bottom-left-radius: $radius;
+	-moz-border-radius-topleft: $radius;
+	-moz-border-radius-bottomleft: $radius;
+	border-top-left-radius: $radius;
+	border-bottom-left-radius: $radius;
+}
+
+/*
+ * Transition
+ */
+@mixin transition($speed) {
+	-webkit-transition: all $speed ease-in-out;
+	-moz-transition: all $speed ease-in-out;
+	-o-transition: all $speed ease-in-out;
+	-ms-transition: all $speed ease-in-out;
+	transition: all $speed ease-in-out;
+}
+
+/*
+ * Media Queries
+ */
+@mixin respond($breakpoint) {
+	@if $breakpoint==desktop {
+		@media only screen and (min-width: 1441px) {
+			@content;
+		}
+	}
+
+	@if $breakpoint==laptop {
+		@media only screen and (max-width: 1440px) {
+			@content;
+		}
+	}
+
+	@if $breakpoint==tablet {
+		@media only screen and (max-width: 991px) {
+			@content;
+		}
+	}
+
+	@if $breakpoint==mobile {
+		@media only screen and (max-width: 480px) {
+			@content;
+		}
+	}
+}

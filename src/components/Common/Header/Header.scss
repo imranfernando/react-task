@@ -1,0 +1,67 @@
+header {
+	background-color: $pure_white;
+	height: 70px;
+	@include flexbox;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	width: 100%;
+
+	.menu-hamburger {
+		width: 25%;
+	}
+
+	.search-box {
+		width: 20%;
+		@include flexbox;
+	}
+
+	.date-time-wrapper {
+		width: 35%;
+		text-align: center;
+	}
+
+	.navbar-right {
+		width: 29%;
+		@include flexbox;
+		justify-content: flex-end;
+		padding-right: 1%;
+		flex: 1;
+	}
+}
+
+/*
+ * Media Queries
+ */
+@include respond(laptop) {
+	header {
+		.menu-hamburger {
+			width: 15%;
+		}
+	}
+}
+
+@include respond(tablet) {
+	header {
+		.search-box,
+		.date-time-wrapper,
+		.notifications-holder {
+			display: none;
+		}
+
+		.menu-hamburger {
+			width: calc(35% - 15px);
+
+			.hamburger-icon {
+				padding-left: 15px;
+				width: 40px;
+				height: 40px;
+			}
+		}
+
+		.navbar-right {
+			width: calc(65% - 15px);
+			padding-right: 15px;
+		}
+	}
+}

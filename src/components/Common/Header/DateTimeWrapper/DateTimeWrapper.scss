@@ -1,0 +1,17 @@
+// @import '../../assets/scss/main.scss';
+
+.date-time-box {
+    color: $shuttle_gray;
+    margin: 0 10px;
+    display: inline-block;
+
+    h4 {
+        background-color: $selago;
+        font-weight: $open_sans_600;
+        font-size: 0.9em;
+        line-height: 40px;
+        padding: 0 40px;
+        margin: 0;
+        @include border_radius(5px);
+    }
+}

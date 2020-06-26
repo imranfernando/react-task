@@ -1,0 +1,65 @@
+.notifications-holder {
+	.notifications-ui {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		li {
+			float: left;
+			margin-right: 20px;
+			padding-right: 10px;
+
+			.notifications-icon-holder {
+				position: relative;
+				cursor: pointer;
+
+				.circle {
+					position: absolute;
+					right: -8px;
+					font-size: 0.6em;
+					width: 10px;
+					height: 10px;
+					display: inline-block;
+					line-height: 15px;
+					text-align: center;
+					vertical-align: middle;
+					@include border_radius(50%);
+
+					span {
+						position: absolute;
+						right: -2.5px;
+						top: -2.5px;
+						font-size: 0.6em;
+						width: 15px;
+						height: 15px;
+						display: inline-block;
+						line-height: 15px;
+						text-align: center;
+						vertical-align: middle;
+						@include border_radius(50%);
+					}
+
+					&--blue {
+						background-color: rgba(41, 98, 255, 1);
+
+						span {
+							background-color: rgba(41, 98, 255, 0.1);
+						}
+					}
+
+					&--red {
+						background-color: rgba(247, 93, 129, 1);
+
+						span {
+							background-color: rgba(247, 93, 129, 0.1);
+						}
+					}
+				}
+
+				.notifications-icon {
+					vertical-align: middle;
+				}
+			}
+		}
+	}
+}

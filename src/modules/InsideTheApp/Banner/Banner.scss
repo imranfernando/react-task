@@ -1,0 +1,46 @@
+.banner-wrapper {
+	margin-bottom: 50px;
+
+	.inside-the-app-banner-img {
+		width: 100%;
+	}
+
+	h1 {
+		color: $fruit_salad;
+		margin: 0;
+		margin-bottom: 10px;
+	}
+
+	p {
+		font-size: 0.9em;
+		width: 75%;
+		margin: 0 auto;
+	}
+}
+
+/*
+ * Media Queries
+ */
+@include respond(desktop) {
+	.banner-wrapper {
+		.inside-the-app-banner-img {
+			width: 250px;
+		}
+	}
+}
+
+@include respond(tablet) {
+	.banner-wrapper {
+		.inside-the-app-banner-img {
+			width: 100%;
+		}
+	}
+}
+
+@include respond(mobile) {
+	.banner-wrapper {
+		.inside-the-app-banner-img {
+			width: 100%;
+		}
+	}
+}

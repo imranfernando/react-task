@@ -1,0 +1,27 @@
+body {
+	font-family: $font-open-sans;
+	background-color: $porcelain;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*
+ * Media Queries
+ */
+@include respond(tablet) {
+	h1,
+	%h1 {
+		font-size: 1.5em;
+	}
+}
+
+@include respond(mobile) {
+	h1,
+	%h1 {
+		font-size: 1.1em;
+	}
+}

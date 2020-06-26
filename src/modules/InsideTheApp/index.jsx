@@ -30,7 +30,7 @@ const InsideTheApp = () => {
 
 	useEffect(() => {
 		menuClick();
-	}, []);
+	}, [menuClick]);
 
 	return (
 		<Fragment>

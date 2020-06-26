@@ -4,7 +4,7 @@ import * as yup from 'yup';
 import Button from '../../../components/Common/Button';
 import Input from '../../../components/Common/FormField/Input';
 import { IconContext } from 'react-icons';
-import { FaLock, FaBan } from 'react-icons/fa';
+import { FaLock } from 'react-icons/fa';
 
 // Regular Expressions
 const passwordRegExp = /^(?=.*[A-Z])(?=.*[!@#$%^&*])(?=.{6,})/;

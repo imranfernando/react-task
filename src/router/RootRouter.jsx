@@ -13,7 +13,8 @@ const RootRouter = () => {
 		<Router>
 			<Switch>
 				<Route exact path={routeNames.home}>
-					<Home />
+					{/* <Home /> */}
+					<InsideTheApp />
 				</Route>
 				<Route path={routeNames.apps}>
 					<Apps />

@@ -1,5 +1,4 @@
 import React from 'react';
-// import './NavbarRight.scss';
 import ProfileImg from '../../../../assets/images/profile-img.jpg';
 import { IconContext } from 'react-icons';
 import { FaCaretDown } from 'react-icons/fa';

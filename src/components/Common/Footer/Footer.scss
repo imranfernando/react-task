@@ -1,18 +1,16 @@
-// @import '../../assets/scss/main.scss';
-
 footer {
-    background: $salt_box;
-    background: -moz-linear-gradient(top, $salt_box 0%, $gravel 100%);
-    background: -webkit-linear-gradient(top, $salt_box 0%, $gravel 100%);
-    background: linear-gradient(to bottom, $salt_box 0%, $gravel 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$salt_box', endColorstr='$gravel', GradientType=0);
-    width: 100%;
-    text-align: center;
-    color: $pure_white;
-    font-size: 0.8em;
-    padding: 15px 0;
+	background: $salt_box;
+	background: -moz-linear-gradient(top, $salt_box 0%, $gravel 100%);
+	background: -webkit-linear-gradient(top, $salt_box 0%, $gravel 100%);
+	background: linear-gradient(to bottom, $salt_box 0%, $gravel 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$salt_box', endColorstr='$gravel', GradientType=0);
+	width: 100%;
+	text-align: center;
+	color: $pure_white;
+	font-size: 0.8em;
+	padding: 15px 0;
 
-    p {
-        margin: 0;
-    }
+	p {
+		margin: 0;
+	}
 }

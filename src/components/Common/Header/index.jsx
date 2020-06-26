@@ -1,5 +1,4 @@
 import React from 'react';
-// import './Header.scss';
 import NavbarRight from './NavbarRight';
 import Notifications from './Notifications';
 import DateTimeWrapper from './DateTimeWrapper';

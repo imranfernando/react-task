@@ -1,5 +1,4 @@
 import React from 'react';
-// import './Breadcrumb.scss';
 
 const Breadcrumb = (props) => {
 	const pageTitle = props.pageTitle;

@@ -1,6 +1,5 @@
 import React from 'react';
 import Clock from 'react-live-clock';
-// import './DateTimeWrapper.scss';
 
 const DateTimeWrapper = () => {
 	return (

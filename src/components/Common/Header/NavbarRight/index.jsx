@@ -11,8 +11,8 @@ const NavbarRight = () => {
 				<img
 					src={ProfileImg}
 					className='profile-img'
-					title='Profile Image'
-					alt='Profile Image'
+					title='Profile'
+					alt='Profile'
 				/>
 
 				<IconContext.Provider value={{ className: 'dropdown-usermenu' }}>

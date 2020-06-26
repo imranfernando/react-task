@@ -22,8 +22,8 @@ const SideNavigation = () => {
 					<img
 						src={ProfileImg}
 						className='navbar-profile-img'
-						title='Profile Image'
-						alt='Profile Image'
+						title='Profile'
+						alt='Profile'
 					/>
 					<h5>Allie Sherman</h5>
 					<h6>UI / UX Designer</h6>

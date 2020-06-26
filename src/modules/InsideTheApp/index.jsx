@@ -19,7 +19,7 @@ const InsideTheApp = () => {
 
 	// sidebar click
 	const menuClick = () => {
-		if (sidebarOpen == false) {
+		if (sidebarOpen === false) {
 			// sidebar open
 			setSidebarOpen(true);
 		} else if (sidebarOpen === true) {

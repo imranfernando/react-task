@@ -1,5 +1,6 @@
 import React from 'react';
 import * as PageName from '../../../constants/pageNames';
+import { Link } from 'react-router-dom';
 import ProfileImg from '../../../assets/images/profile-img.jpg';
 import { IconContext } from 'react-icons';
 import {
@@ -30,64 +31,64 @@ const SideNavigation = () => {
 				<div className='side-navbar-menu'>
 					<ul>
 						<li>
-							<a href='#'>
+							<Link to='/#'>
 								<IconContext.Provider
 									value={{ className: 'side-navbar-menu-icon' }}
 								>
 									<FaHome />
 								</IconContext.Provider>
 								{PageName.pageHomeTitle}
-							</a>
+							</Link>
 						</li>
 						<li>
-							<a href='#'>
+							<Link to='/#'>
 								<IconContext.Provider
 									value={{ className: 'side-navbar-menu-icon' }}
 								>
 									<FaAppStoreIos />
 								</IconContext.Provider>
 								{PageName.pageAppsTitle}
-							</a>
+							</Link>
 						</li>
 						<li>
-							<a href='#'>
+							<Link to='/#'>
 								<IconContext.Provider
 									value={{ className: 'side-navbar-menu-icon' }}
 								>
 									<FaUserAlt />
 								</IconContext.Provider>
 								{PageName.pageProfileTitle}
-							</a>
+							</Link>
 						</li>
 						<li>
-							<a href='#'>
+							<Link to='/#'>
 								<IconContext.Provider
 									value={{ className: 'side-navbar-menu-icon' }}
 								>
 									<FaAddressBook />
 								</IconContext.Provider>
 								{PageName.pageReportsTitle}
-							</a>
+							</Link>
 						</li>
 						<li className='active'>
-							<a href='#'>
+							<Link to='/#'>
 								<IconContext.Provider
 									value={{ className: 'side-navbar-menu-icon' }}
 								>
 									<FaMobileAlt />
 								</IconContext.Provider>
 								{PageName.pageInsideTheAppTitle}
-							</a>
+							</Link>
 						</li>
 						<li>
-							<a href='#'>
+							<Link to='/#'>
 								<IconContext.Provider
 									value={{ className: 'side-navbar-menu-icon' }}
 								>
 									<FaBuffer />
 								</IconContext.Provider>
 								{PageName.pageNaturalLanguageQueryTitle}
-							</a>
+							</Link>
 						</li>
 					</ul>
 				</div>
